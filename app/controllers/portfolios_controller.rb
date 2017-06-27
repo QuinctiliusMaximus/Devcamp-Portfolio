@@ -35,9 +35,9 @@ class PortfoliosController < ApplicationController
     end
  end
  
- def show
+def show
   @portfolio_items = Portfolio.find(params[:id])
- end
+end
  
   def destroy
     # Preform the lookup
