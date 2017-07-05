@@ -5,7 +5,7 @@ class PortfoliosController < ApplicationController
   
   def new
     @portfolio_items = Portfolio.new
-  end
+  end 
   
   def create
     @portfolio_items = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
