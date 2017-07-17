@@ -7,6 +7,7 @@ class PortfoliosController < ApplicationController
   
   def new
     @portfolio_items = Portfolio.new
+
   end 
   
   def create
@@ -23,6 +24,8 @@ class PortfoliosController < ApplicationController
   
  def edit
     @portfolio_items = Portfolio.find(params[:id])
+
+
  end
 
  def update
