@@ -3,12 +3,19 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
   
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
+  
   def new
     @portfolio_items = Portfolio.new
-  end 
-  
+    3.times { @portfolio_items.technologies.build }
+  end
+
   def create
+
     @portfolio_items = Portfolio.new(portfolio_params)
+
 
     respond_to do |format|
       if @portfolio_items.save
