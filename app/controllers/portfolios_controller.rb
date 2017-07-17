@@ -11,7 +11,7 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.new
     3.times { @portfolio_items.technologies.build }
   end
-  
+
   def create
     @portfolio_items = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body,
      technologies_attributes: [:name]))
