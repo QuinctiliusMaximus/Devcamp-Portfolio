@@ -10,9 +10,9 @@ class ApplicationController < ActionController::Base
     @page_title = "Devcamp Portfolio | My Portfolio Website"
   end
   
-  before_action :set_copyright
+ # before_action :set_copyright
   
-  def set_copyright
-    @copyright = KiwicoViewTool::Renderer.copyright 'Quinctilius Maximus', 'All Rights Reserved'
-  end
+ # def set_copyright
+ #  @copyright = KiwicoViewTool::Renderer.copyright 'Quinctilius Maximus', 'All Rights Reserved'
+ # end
 end
