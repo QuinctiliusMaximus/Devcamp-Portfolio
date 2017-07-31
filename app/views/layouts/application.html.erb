@@ -19,19 +19,16 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
     
-          <%= render "shared/application_nav" %>
+            <%= render "shared/application_nav" %>
 
-  
             <%= login_helper %>
 
-    
             <%= yield %>
       
-            <%= @copyright %>
-    
-            <% if session[:source] %>
-            <p>Thanks for visiting me from <%= session[:source] %></p>
-            <% end %>
+            <%= render "shared/application_footer" %>
+            
+            <%= source_helper("application") %>
+            
         </div>
       </div>
     </div>
