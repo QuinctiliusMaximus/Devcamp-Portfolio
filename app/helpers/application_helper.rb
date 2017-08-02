@@ -17,6 +17,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Q W ', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Quinctilius Maximus', 'All rights reserved'
   end
 end
